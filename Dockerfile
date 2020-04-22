@@ -14,8 +14,8 @@
 
 FROM node:alpine
 RUN apk update && apk upgrade
-WORKDIR usr/src/server
-ADD /package.json .
+WORKDIR /usr/src/app
+COPY /package.json .
 RUN npm install
 COPY . .
 

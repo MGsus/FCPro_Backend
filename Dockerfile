@@ -19,12 +19,6 @@ COPY /package.json .
 RUN npm install
 COPY . .
 
-# Support to for arbitrary UserIds
-# https://docs.openshift.com/container-platform/3.11/creating_images/guidelines.html#openshift-specific-guidelines
-RUN chmod -R u+x /server && \
-    chgrp -R 0 /server && \
-    chmod -R g=u /server /etc/passwd
-
 ENV PORT 8080
 EXPOSE 8080
 

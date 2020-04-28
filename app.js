@@ -21,7 +21,7 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 
-const uploadTextRouter = require("./routes/uploadText");
+const router = require("./routes/router");
 
 const app = express();
 app.use(bodyParser.json());
@@ -32,6 +32,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use("/api", uploadTextRouter);
+app.use("/api", router);
 
 module.exports = app;

@@ -2,5 +2,9 @@
   "nl_version": "2019-07-12",
   "nl_api_key": "UOa6K1bYxHOa_Vt9IleULi9nSI0SYlyEtazxNp1KkMxp",
   "nl_url": "https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/e80deec2-d170-43f9-bec1-a72d8a8f6c42",
-  "nl_model_id": "c72617e2-eab9-40b0-bc37-dbb35ef91d2b"
+  "nl_model_id": "c72617e2-eab9-40b0-bc37-dbb35ef91d2b",
+  "twitter_apikey": "0KHfvSE9cZZpjWqu2jgMEZHeO",
+  "twitter_secret": "0hHXKVqlQMF5Wu6rl9eP8pxZPyFE5ux0dNGkQjjhfcgjp6hb61",
+  "twt_token": "294232351-NCdKVNtjFDwu4P09iU2E2jhOn0TI8KEqai3R8SlG",
+  "twt_secret_token": "LPVoPzFZcmLN78Y9bm7RANZGfGTrRAHfyJVBLHdu0iO5z"
 }

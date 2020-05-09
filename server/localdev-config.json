@@ -1,0 +1,15 @@
+{
+  "cos_original_bucket": "fcproyecto-bucket-stg",
+  "cos_normalized_bucket": "fcproyecto-bucket-stg",
+  "cos_api_key": "ASI42dPHPSSBiSjisYUdA1565b5LquTqQa-__xG8YlxS",
+  "cos_endpoint": "s3.us-south.cloud-object-storage.appdomain.cloud",
+  "iam_apikey_description": "Auto-generated for key e258174a-305e-4dbb-9bb9-14dfb790fc31",
+  "iam_apikey_name": "fcproyecto-keys",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/8eb54cf5633241c0aaee110998992dbd::serviceid:ServiceId-bb4a1f12-8ea8-4d0e-afad-42a398a08ed5",
+  "cos_service_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/8eb54cf5633241c0aaee110998992dbd:978e84ea-e76d-42d2-b791-963985eb00c4::",
+  "access_key_id": "3914a5e16b70422da634ce0e50941f89",
+  "secret_access_key": "cda64c186da50f0ca9b3593584b11420f86a20fd8601e837"
+}
+
+    

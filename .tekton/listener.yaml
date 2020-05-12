@@ -73,7 +73,7 @@ metadata:
 spec:
   params:
     - name: repository
-      value: "https://github.com/emeloibmco/Teckton-Kubernetes-Angular-CRUD"
+      value: "https://github.com/MGsus/FCPro_Backend"
     - name: revision
       value: "master"
 ---

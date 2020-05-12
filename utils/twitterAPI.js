@@ -14,7 +14,7 @@ function callTwitter(twitterParams, hashTag) {
         "search/tweets",
         {
           q: hashTag,
-          count: 10,
+          count: 50,
           result_type: "recent",
           lang: "es",
         },

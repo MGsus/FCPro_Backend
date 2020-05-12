@@ -30,8 +30,8 @@ spec:
   type: NodePort
   ports:
     # the port that this service should serve on
-    - port: 80
-      targetPort: 8080
+    - port: 3000
+      targetPort: 3000
   # label keys and values that must match in order to receive traffic for this service
   selector:
     app: backend-app

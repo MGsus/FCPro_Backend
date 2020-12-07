@@ -1,4 +1,4 @@
-apiVersion: tekton.dev/v1alpha1
+apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
   name: pipeline
@@ -24,7 +24,7 @@ spec:
       description: The Kubernetes cluster namespace
       default: proyecto
   workspaces:
-  - name: pipeline
+  - name: pipeline-pvc
   tasks:
     - name: pipeline-build-task
       taskRef:
@@ -41,8 +41,8 @@ spec:
         - name: registryRegion
           value: $(params.registryRegion)
       workspaces:
-      - name: task
-        workspace: pipeline
+      - name: task-pvc
+        workspace: pipeline-pvc          
     - name: pipeline-validate-task
       runAfter: [pipeline-build-task]
       taskRef:
@@ -57,8 +57,8 @@ spec:
         - name: registryRegion
           value: $(params.registryRegion)
       workspaces:
-      - name: task
-        workspace: pipeline
+      - name: task-pvc
+        workspace: pipeline-pvc            
     - name: pipeline-deploy-task
       runAfter: [pipeline-validate-task]
       taskRef:
@@ -77,5 +77,5 @@ spec:
         - name: clusterNamespace
           value: $(params.clusterNamespace)
       workspaces:
-      - name: task
-        workspace: pipeline
+      - name: task-pvc
+        workspace: pipeline-pvc  
